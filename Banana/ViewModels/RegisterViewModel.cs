@@ -29,15 +29,19 @@ public class RegisterViewModel : ObservableObject
             OnPropertyChanged();
         }
     }
-    
+
     private ILogin _login;
 
+    private INavigation _navigation;
+
     public IRelayCommand RegisterButtonCommand { get; }    
-        
-    public RegisterViewModel(ILogin login)
+    public IRelayCommand NaviToLoginButtonCommand { get; }    
+    public RegisterViewModel(ILogin login,INavigation navigation)
     {
         _login = login;
+        _navigation = navigation;
         RegisterButtonCommand = new RelayCommand(RegisterButton);
+        NaviToLoginButtonCommand = new RelayCommand(NaviToLoginButton);
     }
 
     public async void RegisterButton()
@@ -51,6 +55,11 @@ public class RegisterViewModel : ObservableObject
         {
             Console.WriteLine("fail");
         }
+    }
+    
+    public async void NaviToLoginButton()
+    {
+        _navigation.NaviTo(typeof(Login));
     }
     
 }

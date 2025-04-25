@@ -5,12 +5,23 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
 using Banana.Views;
+using CommunityToolkit.Mvvm.ComponentModel;
 
 
 namespace Banana.ViewModels
 {
-    class MainWindowViewModel 
+    class MainWindowViewModel : ObservableObject
     {
-        public UserControl Content { get; set; } = new Login();
+        private UserControl _control;
+
+        public UserControl Content
+        {
+            get => _control??=new Login();
+            set
+            {
+                _control = value;
+                OnPropertyChanged();   
+            }
+        }
     }
 }

@@ -42,7 +42,18 @@
             
         </Grid>
         
-        <Button Grid.Row="3" Grid.Column="1" HorizontalAlignment="Right" Width="50" Margin="10" Command="{Binding   RegisterButtonCommand}">注册</Button>
+        <Grid Grid.Row="3" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            
+            <Button Grid.Row="0" Grid.Column="3"  Width="50" Margin="10" Command="{Binding   NaviToLoginButtonCommand}">返回</Button>
+            <Button Grid.Row="0" Grid.Column="2"  Width="50" Margin="10" Command="{Binding   RegisterButtonCommand}">注册</Button>     
         
+        </Grid>
     </Grid>
+    
 </UserControl>

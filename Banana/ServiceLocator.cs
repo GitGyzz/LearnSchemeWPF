@@ -59,10 +59,11 @@ namespace Banana
             {
 
             }).AddEntityFrameworkStores<AppDbContext>()
-            .AddUserManager<IdentityUser>();
+            .AddUserManager<UserManager<IdentityUser>>();
             
             services.AddSingleton<ILogin,Login>();
             services.AddSingleton<LoginViewModel>();
+            services.AddSingleton<INavigation, Navigation>();
             services.AddSingleton<MainWindowViewModel>();
             services.AddSingleton<RegisterViewModel>();
             

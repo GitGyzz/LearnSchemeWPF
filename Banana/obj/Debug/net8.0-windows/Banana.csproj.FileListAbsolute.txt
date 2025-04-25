@@ -448,7 +448,6 @@ C:\Users\FS\RiderProjects\LearnSchemeWPF\Banana\obj\Debug\net8.0-windows\MainWin
 C:\Users\FS\RiderProjects\LearnSchemeWPF\Banana\obj\Debug\net8.0-windows\Views\Login.g.cs
 C:\Users\FS\RiderProjects\LearnSchemeWPF\Banana\obj\Debug\net8.0-windows\Views\Register.g.cs
 C:\Users\FS\RiderProjects\LearnSchemeWPF\Banana\obj\Debug\net8.0-windows\App.g.cs
-C:\Users\FS\RiderProjects\LearnSchemeWPF\Banana\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
 C:\Users\FS\RiderProjects\LearnSchemeWPF\Banana\obj\Debug\net8.0-windows\Banana_MarkupCompile.cache
 C:\Users\FS\RiderProjects\LearnSchemeWPF\Banana\obj\Debug\net8.0-windows\Banana_MarkupCompile.lref
 C:\Users\FS\RiderProjects\LearnSchemeWPF\Banana\obj\Debug\net8.0-windows\App.baml
@@ -466,3 +465,10 @@ C:\Users\FS\RiderProjects\LearnSchemeWPF\Banana\obj\Debug\net8.0-windows\refint\
 C:\Users\FS\RiderProjects\LearnSchemeWPF\Banana\obj\Debug\net8.0-windows\Banana.pdb
 C:\Users\FS\RiderProjects\LearnSchemeWPF\Banana\obj\Debug\net8.0-windows\Banana.genruntimeconfig.cache
 C:\Users\FS\RiderProjects\LearnSchemeWPF\Banana\obj\Debug\net8.0-windows\ref\Banana.dll
+C:\Users\FS\RiderProjects\LearnSchemeWPF\Banana\obj\Debug\net8.0-windows\Banana.sourcelink.json
+C:\Users\FS\RiderProjects\LearnSchemeWPF\Banana\bin\Debug\net8.0-windows\MaterialDesignColors.dll
+C:\Users\FS\RiderProjects\LearnSchemeWPF\Banana\bin\Debug\net8.0-windows\MaterialDesignThemes.Wpf.dll
+C:\Users\FS\RiderProjects\LearnSchemeWPF\Banana\bin\Debug\net8.0-windows\Microsoft.Xaml.Behaviors.dll
+C:\Users\FS\RiderProjects\LearnSchemeWPF\Banana\obj\Debug\net8.0-windows\Views\NavigationBar.g.cs
+C:\Users\FS\RiderProjects\LearnSchemeWPF\Banana\obj\Debug\net8.0-windows\Views\NavigationBar.baml
+C:\Users\FS\RiderProjects\LearnSchemeWPF\Banana\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs

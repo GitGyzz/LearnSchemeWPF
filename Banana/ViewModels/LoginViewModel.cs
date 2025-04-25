@@ -1,8 +1,10 @@
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using Banana.Services;
+using Banana.Views;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+
 
 namespace Banana.ViewModels;
 
@@ -32,12 +34,17 @@ public class LoginViewModel : ObservableObject
     
     private ILogin _login;
 
+    private INavigation _navigation;
+    
     public IRelayCommand LoginButtonCommand { get; }    
+    public IRelayCommand NaviToRegisterButtonCommand { get; }  
         
-    public LoginViewModel(ILogin login)
+    public LoginViewModel(ILogin login,INavigation navigation)
     {
         _login = login;
+        _navigation = navigation;
         LoginButtonCommand = new RelayCommand(LoginButton);
+        NaviToRegisterButtonCommand = new RelayCommand(NaviToRegisterButton);
     }
 
     public async void LoginButton()
@@ -51,6 +58,11 @@ public class LoginViewModel : ObservableObject
         {
             Console.WriteLine("fail");
         }
+    }
+    
+    public async void NaviToRegisterButton()
+    {
+        _navigation.NaviTo(typeof(Register));
     }
     
 }
