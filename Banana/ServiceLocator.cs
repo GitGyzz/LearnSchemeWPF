@@ -43,6 +43,8 @@ namespace Banana
         
         public RegisterViewModel RegisterViewModel => _provider.GetRequiredService<RegisterViewModel>();
 
+        public NavigationBarViewModel NavigationBarViewModel => _provider.GetRequiredService<NavigationBarViewModel>();
+
         public ServiceLocator() 
         {
             _provider = CreateProvider();
@@ -53,14 +55,15 @@ namespace Banana
             var services=new ServiceCollection();
 
             services.AddDbContext<AppDbContext>(options=> 
-                options.UseSqlServer("server=(localdb)\\MSSQLLocalDB;Database=BNNMSSQL;Integrated Security=True"));
+                options.UseSqlServer("server=(localdb)\\MSSQLLocalDB;Database=BNNMSSQL;MultipleActiveResultSets=true;Integrated Security=True"));
 
             services.AddIdentityCore<IdentityUser>(options =>
             {
 
             }).AddEntityFrameworkStores<AppDbContext>()
             .AddUserManager<UserManager<IdentityUser>>();
-            
+
+            services.AddSingleton<NavigationBarViewModel>();
             services.AddSingleton<ILogin,Login>();
             services.AddSingleton<LoginViewModel>();
             services.AddSingleton<INavigation, Navigation>();

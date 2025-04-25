@@ -13,15 +13,12 @@ namespace Banana.ViewModels
     class MainWindowViewModel : ObservableObject
     {
         private UserControl _control;
-
+        
         public UserControl Content
         {
             get => _control??=new Login();
-            set
-            {
-                _control = value;
-                OnPropertyChanged();   
-            }
+            set => SetProperty(ref _control, value); 
+
         }
     }
 }

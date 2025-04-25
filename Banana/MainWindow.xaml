@@ -8,23 +8,13 @@
         xmlns:v="clr-namespace:Banana.Views"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800"
-        
         Style="{StaticResource MaterialDesignWindow}"
-        
         DataContext="{Binding  MainWindowViewModel, Source={StaticResource ServiceLocator}}"
         >
-        <!--        Style="{StaticResource MaterialDesignWindow}" Content="{Binding Content}"-->
         
         <Grid>
-                <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto"></ColumnDefinition>
-                        <ColumnDefinition Width="*"></ColumnDefinition>
-                </Grid.ColumnDefinitions>
-                
-                
-                <ContentControl Grid.Column="0" Content="{Binding Content}"></ContentControl>
-                <ContentControl Grid.Column="1" Content="{Binding Content}"></ContentControl>
+                <v:NavigationBar ></v:NavigationBar>
+                <ContentControl Content="{Binding Content}"></ContentControl>
         </Grid>
-
-    
+        
 </Window>

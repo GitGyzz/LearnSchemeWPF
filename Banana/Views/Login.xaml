@@ -4,9 +4,13 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Banana.Views"
+             xmlns:service="clr-namespace:Banana.Services"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800"
              DataContext="{Binding LoginViewModel,Source={StaticResource ServiceLocator}}">
+    <UserControl.Resources>
+        <service:InverseBooleanConverter x:Key="InverseBooleanConverter"></service:InverseBooleanConverter>
+    </UserControl.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"></RowDefinition>
@@ -35,10 +39,10 @@
             </Grid.ColumnDefinitions>
             
             <Label Grid.Row="0"  Grid.Column="0" HorizontalContentAlignment="Center" Margin="10">用户名</Label> 
-            <TextBox Grid.Row="0"   Grid.Column="1" HorizontalContentAlignment="Center" Margin="10" Text="{Binding Name}"></TextBox>
+            <TextBox Grid.Row="0"   Grid.Column="1" HorizontalContentAlignment="Left" Margin="10" Text="{Binding Name ,ValidatesOnNotifyDataErrors=True,UpdateSourceTrigger=PropertyChanged}"></TextBox>
             
             <Label Grid.Row="1"  Grid.Column="0" HorizontalContentAlignment="Center" Margin="10">密码</Label> 
-            <TextBox Grid.Row="1"   Grid.Column="1" HorizontalContentAlignment="Center" Margin="10" Text="{Binding Password}" ></TextBox>
+            <TextBox Grid.Row="1"   Grid.Column="1" HorizontalContentAlignment="Left" Margin="10" Text="{Binding Password,ValidatesOnNotifyDataErrors=True,UpdateSourceTrigger=PropertyChanged}" ></TextBox>
             
         </Grid>
         
@@ -51,7 +55,7 @@
             </Grid.ColumnDefinitions>
             
             <Button Grid.Row="0" Grid.Column="2"   Margin="10" Command="{Binding   NaviToRegisterButtonCommand}">注册</Button>     
-            <Button Grid.Row="0" Grid.Column="3"   Margin="10" Command="{Binding   LoginButtonCommand}">登录</Button>
+            <Button Grid.Row="0" Grid.Column="3"   Margin="10" IsEnabled="{Binding HasErrors,Converter={StaticResource InverseBooleanConverter}}" Command="{Binding   LoginButtonCommand}">登录</Button>
             
         </Grid>
         

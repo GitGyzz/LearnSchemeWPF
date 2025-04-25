@@ -12,22 +12,14 @@ public class RegisterViewModel : ObservableObject
     public string Name
     {
         get => _name;
-        set
-        {
-            _name = value;
-            OnPropertyChanged();
-        }
+        set => SetProperty(ref _name, value); 
     }
 
     public string _password;
     public string Password
     {
         get => _password;
-        set
-        {
-            _password = value;
-            OnPropertyChanged();
-        }
+        set =>SetProperty(ref _password, value); 
     }
 
     private ILogin _login;

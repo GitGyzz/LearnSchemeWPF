@@ -12,11 +12,13 @@ namespace Banana.Data
     public class AppDbContext : IdentityDbContext<IdentityUser>
     {
         public DbSet<IdentityUser> Users { get; set; }
-
+        
+        /*
         public AppDbContext()
         {
             
         }
+        */
         
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
