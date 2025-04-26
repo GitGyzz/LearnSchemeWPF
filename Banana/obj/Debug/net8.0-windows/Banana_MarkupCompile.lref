@@ -1,7 +1,8 @@
 ﻿
 FC:\Users\FS\RiderProjects\LearnSchemeWPF\Banana\App.xaml;;
 FC:\Users\FS\RiderProjects\LearnSchemeWPF\Banana\MainWindow.xaml;;
-FC:\Users\FS\RiderProjects\LearnSchemeWPF\Banana\Views\Login.xaml;;
-FC:\Users\FS\RiderProjects\LearnSchemeWPF\Banana\Views\NavigationBar.xaml;;
-FC:\Users\FS\RiderProjects\LearnSchemeWPF\Banana\Views\Register.xaml;;
+FC:\Users\FS\RiderProjects\LearnSchemeWPF\Banana\Views\LoginView.xaml;;
+FC:\Users\FS\RiderProjects\LearnSchemeWPF\Banana\Views\NavigationBarView.xaml;;
+FC:\Users\FS\RiderProjects\LearnSchemeWPF\Banana\Views\RegisterView.xaml;;
+FC:\Users\FS\RiderProjects\LearnSchemeWPF\Banana\Views\TimeRecordView.xaml;;
 

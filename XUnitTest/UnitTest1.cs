@@ -22,7 +22,7 @@ namespace XUnitTest
         {
             string name = "admin";
             string password = "123";
-            bool r= await _login.Register(name, password);
+            bool r= await _login.RegisterAsync(name, password);
             Assert.True(r);
         }
     }

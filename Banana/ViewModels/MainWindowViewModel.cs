@@ -16,7 +16,7 @@ namespace Banana.ViewModels
         
         public UserControl Content
         {
-            get => _control??=new Login();
+            get => _control??=new LoginView();
             set => SetProperty(ref _control, value); 
 
         }

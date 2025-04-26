@@ -8,24 +8,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b714392d-5cea-4c3e-96bf-6fd9fd80837f" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/Services/InverseBooleanConverter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViewModels/NavigationBarViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Models/User.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViewModels/TimeRecordViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Views/NavigationBarView.xaml.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Views/TimeRecordView.xaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Banana/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Banana/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Banana.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Banana.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Banana.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/Banana.sln.DotSettings.user" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/AppDbContext.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainWindow.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/MainWindow.xaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ServiceLocator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceLocator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/ILogin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ILogin.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Login.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Login.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ViewModels/LoginViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ViewModels/LoginViewModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ViewModels/MainWindowViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ViewModels/MainWindowViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViewModels/NavigationBarViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ViewModels/NavigationBarViewModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ViewModels/RegisterViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ViewModels/RegisterViewModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/Login.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Login.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/NavigationBar.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/NavigationBar.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/Login.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/LoginView.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/Login.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Views/LoginView.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/NavigationBar.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/NavigationBarView.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/NavigationBar.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Views/TimeRecordView.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/Register.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/RegisterView.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/Register.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Views/RegisterView.xaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net8.0-windows/Banana.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net8.0-windows/Banana.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net8.0-windows/Banana.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net8.0-windows/Banana.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net8.0-windows/Banana.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net8.0-windows/Banana.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0-windows/Banana.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0-windows/Banana.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0-windows/Banana.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0-windows/Banana.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0-windows/Banana.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0-windows/Banana.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0-windows/Banana.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0-windows/Banana.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0-windows/Banana.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0-windows/Banana.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0-windows/Banana.g.resources" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0-windows/Banana.g.resources" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0-windows/Banana.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0-windows/Banana.pdb" afterDir="false" />
@@ -34,10 +45,12 @@
       <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0-windows/Banana_MarkupCompile.lref" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0-windows/MainWindow.baml" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0-windows/MainWindow.baml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0-windows/MainWindow.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0-windows/MainWindow.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0-windows/Views/Login.baml" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0-windows/Views/Login.baml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0-windows/Views/Login.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0-windows/Views/Login.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0-windows/Views/NavigationBar.baml" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0-windows/Views/NavigationBar.baml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0-windows/Views/NavigationBar.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0-windows/Views/NavigationBar.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0-windows/Views/Login.baml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0-windows/Views/Login.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0-windows/Views/NavigationBar.baml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0-windows/Views/NavigationBar.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0-windows/Views/Register.baml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0-windows/Views/Register.g.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0-windows/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0-windows/apphost.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0-windows/ref/Banana.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0-windows/ref/Banana.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0-windows/refint/Banana.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0-windows/refint/Banana.dll" afterDir="false" />
@@ -71,9 +84,11 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/211e6f3b24fa438a92f1815153647ce2c8f908/73/9349494d/ExceptionDispatchInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4a37508f5f72412da47f18c02ce8145313928/21/3728b946/INotifyDataErrorInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/60b63c019ead4a238340b47a1c0010d5226910/1a/5394b98f/DispatcherTimer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6412d4331611499aab4eb63809a2a83bf60910/42/bc5025fa/XamlReader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/75156ce4082ffca8ad9c16a2a2a48318e68a4ba6adcaff9e9c693e8dafbe850/DataErrorsChangedEventArgs.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/obj/Debug/net8.0-windows/Views/NavigationBar.g.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/bd1d5c50194fea68ff3559c160230b0ab50f5acf4ce3061bffd6d62958e2182/ExceptionDispatchInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/obj/Debug/net8.0-windows/Banana_0os4lqng_wpftmp.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../XUnitTest/obj/Debug/net8.0-windows/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -132,7 +147,10 @@
       <workItem from="1745481306612" duration="8993000" />
       <workItem from="1745546916004" duration="1810000" />
       <workItem from="1745548748736" duration="5800000" />
-      <workItem from="1745569004855" duration="9110000" />
+      <workItem from="1745569004855" duration="9529000" />
+      <workItem from="1745632068309" duration="8637000" />
+      <workItem from="1745654966645" duration="5074000" />
+      <workItem from="1745664768588" duration="2120000" />
     </task>
     <task id="LOCAL-00001" summary="add materialDesign">
       <option name="closed" value="true" />
@@ -142,7 +160,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745548951510</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add validation">
+      <option name="closed" value="true" />
+      <created>1745591855431</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1745591855431</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,7 +187,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="origin/main" />
                       </list>
                     </value>
                   </entry>
@@ -176,7 +202,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="add materialDesign" />
-    <option name="LAST_COMMIT_MESSAGE" value="add materialDesign" />
+    <MESSAGE value="add validation" />
+    <option name="LAST_COMMIT_MESSAGE" value="add validation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

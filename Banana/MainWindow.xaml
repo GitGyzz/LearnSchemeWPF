@@ -10,11 +10,11 @@
         Title="MainWindow" Height="450" Width="800"
         Style="{StaticResource MaterialDesignWindow}"
         DataContext="{Binding  MainWindowViewModel, Source={StaticResource ServiceLocator}}"
-        >
+        ResizeMode="NoResize">
         
         <Grid>
-                <v:NavigationBar ></v:NavigationBar>
+                <v:NavigationBarView ></v:NavigationBarView>
                 <ContentControl Content="{Binding Content}"></ContentControl>
         </Grid>
-        
+ 
 </Window>

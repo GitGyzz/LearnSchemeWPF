@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Banana.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
@@ -11,7 +12,8 @@ namespace Banana.Data
 {
     public class AppDbContext : IdentityDbContext<IdentityUser>
     {
-        public DbSet<IdentityUser> Users { get; set; }
+        public DbSet<User> Users { get; set; }
+
         
         /*
         public AppDbContext()

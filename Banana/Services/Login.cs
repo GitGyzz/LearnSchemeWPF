@@ -10,14 +10,17 @@ public class Login : ILogin
 {
 
     private UserManager<IdentityUser> _userManager;
+    private AppDbContext _appDbContext;
     
-    public Login(UserManager<IdentityUser> userManager)
+    public Login(UserManager<IdentityUser> userManager,AppDbContext appDbContext)
     {
         _userManager = userManager;
+        _appDbContext = appDbContext;
     }
     
-    public async Task<bool>  UserLogin(string name ,string password)
+    public async Task<bool>  UserLoginAsync(string name ,string password)
     {
+        if (string.IsNullOrEmpty(name)) return false;
         var user=await _userManager.FindByNameAsync(name);
         if (user is null) return false;
         var exist = await _userManager.CheckPasswordAsync(user, password);
@@ -25,13 +28,20 @@ public class Login : ILogin
         return false;
     }
 
-    public async Task<bool> Register(string name,string password)
+    public async Task<bool> RegisterAsync(string name,string password)
     {
+        if (string.IsNullOrEmpty(name)) return false;
         var user = await _userManager.FindByNameAsync(name);
         if (user is not null) return false;
-        var r = await _userManager.CreateAsync(user, password);
+        var identityUser = new IdentityUser()
+        {
+            UserName = name,
+        };
+        var r = await _userManager.CreateAsync(identityUser, password);
         if (r.Succeeded)
         {
+            await _appDbContext.SaveChangesAsync();
+
             return true;
         }
         else

@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\FS\RiderProjects\LearnSchemeWPF\Banana\App.xaml
-4162784875
+5-361334243
 
-20697712477
+231179846535
 237-242647689
-MainWindow.xaml;Views\Login.xaml;Views\NavigationBar.xaml;Views\Register.xaml;
+MainWindow.xaml;Views\LoginView.xaml;Views\NavigationBarView.xaml;Views\RegisterView.xaml;Views\TimeRecordView.xaml;
 
 False
 

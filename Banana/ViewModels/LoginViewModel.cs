@@ -36,6 +36,17 @@ public class LoginViewModel : ObservableObject , INotifyDataErrorInfo
         }
     }
     
+    private string _messageResult;
+
+    public string MessageResult
+    {
+        get => _messageResult;
+        set
+        {
+            SetProperty(ref _messageResult, value);
+        }
+    }
+    
     private ILogin _login;
 
     private INavigation _navigation;
@@ -52,16 +63,16 @@ public class LoginViewModel : ObservableObject , INotifyDataErrorInfo
         NaviToRegisterButtonCommand = new RelayCommand(NaviToRegisterButton);
         
         //一启动就触发一次验证
-        Name = "";
-        Password = "";
+        Name = "admin";
+        Password = "123";
     }
 
     public async void LoginButton()
     {
-        var error=await _login.UserLogin(Name,Password);
-        if (error==false)
+        var succeed=await _login.UserLoginAsync(Name,Password);
+        if (succeed)
         {
-            Console.WriteLine("success");
+            _navigation.NaviTo(typeof(TimeRecordView));
         }
         else
         {
@@ -71,7 +82,7 @@ public class LoginViewModel : ObservableObject , INotifyDataErrorInfo
     
     public async void NaviToRegisterButton()
     {
-        _navigation.NaviTo(typeof(Register));
+        _navigation.NaviTo(typeof(RegisterView));
     }
 
 
@@ -86,7 +97,6 @@ public class LoginViewModel : ObservableObject , INotifyDataErrorInfo
     {
         ErrorsChanged?.Invoke(this,new DataErrorsChangedEventArgs(property));
         OnPropertyChanged(nameof(HasErrors));
-        Console.WriteLine(HasErrors);
     }
     public void ValidateUser()
     {
